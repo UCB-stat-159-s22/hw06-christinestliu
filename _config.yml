@@ -1,0 +1,53 @@
+# Book settings
+title                       : Reproduce LIGO # The title of the book. Will be placed in the left navbar.
+author                      : Ligo Scientific Collaboration (LSC) and Christine Liu # The author of the book
+logo                        : logo.png  # A path to the book logo
+
+execute:
+  execute_notebooks: 'off'
+
+only_build_toc_files: true
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+#bibtex_bibfiles:
+#  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+# TODO: the below should be disabled and instead the sphinx section activated
+# after we upgrade to j-book newer than 0.9.1 and its dependencies.  For now
+# this gives us the equivalent of html_images fixes, but without version
+# conflicts that currently arise from trying to use it.
+#parse:
+#  myst_extended_syntax: true
+
+# Sphinx section commented out for now as per above todo, will activate it
+# later. 
+
+#bibtex_bibfiles: 
+#  - references.bib
+
+#sphinx:
+#  config:
+#    exclude_patterns:
+#      - README.md
+#    myst_enable_extensions: 
+#    - amsmath
+#    - dollarmath
+#    - html_image
+#    - html_admonition
